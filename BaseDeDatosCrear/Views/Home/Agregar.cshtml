@@ -1,0 +1,26 @@
+﻿
+@model BaseDeDatosCrear.Models.Producto
+    <h3>Formulario de registro</h3>
+@using (Html.BeginForm("Agregar", "Home", FormMethod.Post)) {
+    <table>
+        <tr>
+            <td>Nombre</td>
+            <td>@Html.TextBoxFor(mod => mod.Nombre)</td>
+        </tr>
+        <tr>
+            <td>Cantidad</td>
+            <td>@Html.TextBoxFor(mod => mod.Cantidad)</td>
+        </tr>
+        <tr>
+            <td>Precio</td>
+            <td>@Html.TextBoxFor(mod => mod.Precio)</td>
+        </tr>
+        <tr>
+            <td>Estado</td>
+            <td>@Html.TextBoxFor(mod => mod.Estado)</td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Agregar"/></td>
+        </tr>
+    </table>
+}
